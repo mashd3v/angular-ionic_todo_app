@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { WishlistService } from 'src/app/services/wishlist.service';
 
 @Component({
   selector: 'app-tab2',
@@ -7,6 +8,6 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  constructor(public wishlistService: WishlistService) {}
 
 }
